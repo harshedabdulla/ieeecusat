@@ -18,7 +18,7 @@ function Highlights() {
     <>
       <Navbar />
       <section className="min-h-80vh h-full text-black flex flex-col gap-8 items-center justify-center">
-        <h1 className="text-8xl font-medium text-[#01284C]">Highlights</h1>{" "}
+        <h1 className="text-8xl font-medium text-[#01284C]">Highlights</h1>
         <Type1
           number={memberCount}
           title="Member Count"
