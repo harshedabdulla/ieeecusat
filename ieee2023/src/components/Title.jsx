@@ -1,10 +1,30 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Title = ({ title }) => {
+  const textVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <section className={`flex justify-center items-center bg-blue-900 mt-6 mb-8 p-8`}>
-      <h1 className="text-white text-6xl md:text-6xl lg:text-4xl p-20">{title}</h1>
-    </section>
+    <motion.section
+      className="flex justify-center items-center bg-blue-900 mt-6 mb-8 p-8"
+      initial="hidden"
+      animate="visible"
+      variants={textVariants}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.h1
+        className="text-white text-6xl md:text-6xl lg:text-4xl p-20"
+        initial="hidden"
+        animate="visible"
+        variants={textVariants}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        {title}
+      </motion.h1>
+    </motion.section>
   );
 };
 
