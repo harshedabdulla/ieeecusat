@@ -17,8 +17,8 @@ function Highlights() {
   return (
     <>
       <Navbar />
-      <section className="min-h-80vh h-full text-black flex flex-col gap-8 items-center justify-center">
-        <h1 className="text-8xl font-medium text-[#01284C]">Highlights</h1>{" "}
+      <section className="min-h-80vh h-full text-black flex flex-col gap-8 items-center justify-center mt-8">
+        <h1 className="text-6xl  text-[#01284C]">Highlights</h1>{" "}
         <Type1
           number={memberCount}
           title="Member Count"
@@ -79,7 +79,7 @@ const Type1 = ({ number, title, icon }) => {
         </div>
       </div>
       <div
-        className="w-1/2 flex items-center justify-start pl-8 text-9xl"
+        className="w-1/2 flex items-center justify-start pl-8 text-8xl"
         style={{ color: "rgba(1, 40, 76, 0.86)" }}
       >
         {icon}
@@ -92,7 +92,7 @@ const Type2 = ({ number, title, icon }) => {
   return (
     <article className="flex w-full overflow-hidden">
       <div
-        className="w-1/2 flex items-center justify-end pr-8 text-9xl"
+        className="w-1/2 flex items-center justify-end pr-8 text-8xl"
         style={{ color: "rgba(1, 40, 76, 0.86)" }}
       >
         {icon}

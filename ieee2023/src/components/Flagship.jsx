@@ -5,27 +5,30 @@ const Flagship = ({ event }) => {
 
   return (
     <div className="flex flex-col items-center justify-center py-10 md:py-15 mb-10">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-4 md:px-8 relative">
         <div className="md:flex items-center justify-between">
-          
-          <div className="md:w-1/2 md:pl-12 bp-4">
+          <div className="md:w-1/2 md:pl-12 md:block hidden">
             <h2 className="text-4xl mb-4">Slashkey 2.0</h2>
-            <div className='block'>
-            <p className="mb-2">Location: {location}</p>
-            <p className="mb-2">Date: {date}</p>
-            <p className="mb-4">Mode: {mode}</p>
-            <a
-              href={registerLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg inline-block transition-colors duration-300"
-            >
-              Register Now
-            </a>
+            <div>
+              <p className="mb-2">Location: {location}</p>
+              <p className="mb-2">Date: {date}</p>
+              <p className="mb-4">Mode: {mode}</p>
+              <a
+                href={registerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg inline-block transition-colors duration-300"
+              >
+                Register Now
+              </a>
             </div>
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 relative">
             <img src={imageSrc} alt="Event Poster" className="w-full h-auto md:max-h-screen" />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-4 text-center">
+              <p className="text-lg font-bold">{date}</p>
+              
+            </div>
           </div>
         </div>
       </div>

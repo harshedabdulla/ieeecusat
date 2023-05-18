@@ -24,7 +24,21 @@ function Events() {
         <Navbar/>
         <Title title="Events" />
         <Flagship event={flagshipEvent} />
-        <EventCard {...eventData} />
+        <div className="flex flex-wrap justify-center mx-auto">
+  <div className="lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8 mx-auto">
+    <EventCard {...eventData} />
+  </div>
+  <div className="lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8 mx-auto">
+    <EventCard {...eventData} />
+  </div>
+  <div className="lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8 mx-auto">
+    <EventCard {...eventData} />
+  </div>
+</div>
+
+        
+        
+       
     </div>
   )
 }
