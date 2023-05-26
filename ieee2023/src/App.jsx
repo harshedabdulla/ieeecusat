@@ -1,5 +1,6 @@
 import React from 'react'
-import {Routes, Route, BrowserRouter} from 'react-router-dom'
+import {Routes, Route, BrowserRouter} from 'react-router-dom
+import Footer from "./components/Footer"
 import Home from './components/Home'
 import Execom from './components/Execom'
 import Events from './components/Events'
@@ -18,6 +19,7 @@ function App() {
         <Route path='/highlights' element={<Highlights/>} />
 
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
