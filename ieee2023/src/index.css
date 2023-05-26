@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer {
+    background: linear-gradient(180deg, #01284C 52.4%, #000000 100%);
+}
+
+.footer__card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px 0px;
+}
+
+.form__bg {
+    background: rgba(255, 255, 255, 0.2);
+}
