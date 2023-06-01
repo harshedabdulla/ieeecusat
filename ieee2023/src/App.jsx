@@ -19,7 +19,7 @@ function App() {
         <Route path='/highlights' element={<Highlights/>} />
 
       </Routes>
-      <Footer />
+      
     </BrowserRouter>
   )
 }
