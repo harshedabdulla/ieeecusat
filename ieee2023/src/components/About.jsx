@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-8">
-      <div className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-4/5">
+      <div className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-5/6">
         <motion.h1
           className="text-4xl text-center text-orange-400"
           initial={{ opacity: 0, y: -20 }}

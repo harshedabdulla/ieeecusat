@@ -7,6 +7,7 @@ import Events from './components/Events'
 import Highlights from './components/Highlights'
 import Contacts from './components/Contacts'
 import About from './components/About'
+import Gallery from './components/Gallery'
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/about' element={<About/>} />
         <Route path='/contacts' element={<Contacts/>} />
         <Route path='/highlights' element={<Highlights/>} />
+        <Route path='/gallery' element={<Gallery/>} />
 
       </Routes>
       

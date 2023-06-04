@@ -16,30 +16,30 @@ function Highlights() {
 
   return (
     <>
-      <Navbar />
-      <section className="min-h-80vh h-full text-black flex flex-col gap-8 items-center justify-center mt-8">
-        <h1 className="text-6xl  text-[#01284C]">Highlights</h1>{" "}
+      
+      <section className="min-h-80vh h-full text-black flex flex-col gap-8 items-center justify-center mt-4">
+        <h1 className="text-4xl  text-orange-400">Highlights</h1>{" "}
         <Type1
           number={memberCount}
           title="Member Count"
-          icon={<HiUserGroup style={{ color: "#01284C", opacity: 1 }} />}
+          icon={<HiUserGroup style={{ color: "#49A79D", opacity: 1 }} />}
         />
         <Type2
           number={completedEvents}
           title="Completed Events"
           icon={
-            <BsFillBookmarkCheckFill style={{ color: "#01284C", opacity: 1 }} />
+            <BsFillBookmarkCheckFill style={{ color: "#49A79D", opacity: 1 }} />
           }
         />
         <Type1
           number={societyCount}
           title="Societies"
-          icon={<SlBadge style={{ color: "#01284C", opacity: 1 }} />}
+          icon={<SlBadge style={{ color: "#49A79D", opacity: 1 }} />}
         />
         <Type2
           number={achievementsCount}
           title="Achievements"
-          icon={<FaTrophy style={{ color: "#01284C", opacity: 1 }} />}
+          icon={<FaTrophy style={{ color: "#49A79D", opacity: 1 }} />}
         />
       </section>
     </>
@@ -51,11 +51,11 @@ export default Highlights;
 const Type1 = ({ number, title, icon }) => {
   return (
     <article className="flex w-full overflow-hidden">
-      <div className="w-1/2 flex flex-col items-end pr-8 justify-center skew-x-[-30deg] border-r-4 border-r-slate-900 border-t-2 border-t-[#01284C] border-b-4 border-b-[#01284C] ">
+      <div className="w-1/2 flex flex-col items-end pr-8 justify-center skew-x-[-30deg] border-r-4 border-r-slate-900 border-t-2 border-t-[#49A79D] border-b-4 border-b-[#49A79D] ">
         <div className="inside skew-x-[30deg] flex flex-col items-center justify-center m-2">
           <AnimatedNumbers
             fontStyle={{
-              fontSize: 50,
+              fontSize: 40,
               fontWeight: "bold",
               color: "rgba(1, 40, 76, 0.86)",
             }}
@@ -71,7 +71,7 @@ const Type1 = ({ number, title, icon }) => {
             ]}
           ></AnimatedNumbers>
           <h2
-            className="text-3xl font-semibold"
+            className="text-2xl "
             style={{ color: "rgba(1, 40, 76, 0.86)" }}
           >
             {title}
@@ -79,7 +79,7 @@ const Type1 = ({ number, title, icon }) => {
         </div>
       </div>
       <div
-        className="w-1/2 flex items-center justify-start pl-8 text-8xl"
+        className="w-1/2 flex items-center justify-start pl-8 text-5xl"
         style={{ color: "rgba(1, 40, 76, 0.86)" }}
       >
         {icon}
@@ -92,16 +92,16 @@ const Type2 = ({ number, title, icon }) => {
   return (
     <article className="flex w-full overflow-hidden">
       <div
-        className="w-1/2 flex items-center justify-end pr-8 text-8xl"
+        className="w-1/2 flex items-center justify-end pr-8 text-6xl"
         style={{ color: "rgba(1, 40, 76, 0.86)" }}
       >
         {icon}
       </div>
-      <div className="w-1/2 flex flex-col items-start  justify-center skew-x-[-30deg] border-l-4 border-l-slate-900 border-t-2 border-t-[#01284C] border-b-4 border-b-[#01284C] ">
+      <div className="w-1/2 flex flex-col items-start  justify-center skew-x-[-30deg] border-l-4 border-l-slate-900 border-t-2 border-t-[#49A79D] border-b-4 border-b-[#49A79D] ">
         <div className="inside skew-x-[30deg] flex flex-col items-center justify-center m-2">
           <AnimatedNumbers
             fontStyle={{
-              fontSize: 50,
+              fontSize: 40,
               fontWeight: "bold",
               color: "rgba(1, 40, 76, 0.86)",
             }}
@@ -117,7 +117,7 @@ const Type2 = ({ number, title, icon }) => {
             ]}
           ></AnimatedNumbers>
           <h2
-            className="text-3xl font-semibold"
+            className="text-2xl"
             style={{ color: "rgba(1, 40, 76, 0.86)" }}
           >
             {title}
