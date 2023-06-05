@@ -28,7 +28,7 @@ const Gallery = () => {
 
   return (
     <div className="flex justify-center items-center mt-12 mx-4">
-      <div className="w-3/4">
+      <div className="w-4/5">
         <div className="relative bg-white rounded-lg overflow-hidden border-2 border-[#49A79D] px-8 mt-4 pb-8 mb-8">
           <motion.h1
             className="text-center text-4xl py-8 text-orange-400"
@@ -38,14 +38,14 @@ const Gallery = () => {
           >
             Gallery
           </motion.h1>
-          <div className="flex">
+          <div className="flex flex-col md:flex-row">
             <motion.div
-              className="w-1/2 h-80 flex flex-col justify-between"
+              className="w-full md:w-1/2 h-80 flex flex-col justify-between md:order-2"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="text-center text-xl text-orange-400 relative">
+              <h3 className="text-center text-xl text-blue-800 relative">
                 "ONE PICTURE A MILLION MEMORIES"
               </h3>
               <motion.div
@@ -60,7 +60,7 @@ const Gallery = () => {
               </motion.div>
             </motion.div>
             <motion.div
-              className="w-1/2 relative overflow-hidden h-80"
+              className="w-full md:w-1/2 relative overflow-hidden h-80 md:order-1"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -93,26 +93,26 @@ const Gallery = () => {
               >
                 &gt;
               </motion.button>
+              <motion.div
+                className="flex justify-center mt-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                {images.map((_, index) => (
+                  <motion.span
+                    key={index}
+                    className={`h-2 w-2 mx-1 rounded-full ${
+                      index === currentSlide ? 'bg-[#49A79D]' : 'bg-gray-300'
+                    }`}
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                  />
+                ))}
+              </motion.div>
             </motion.div>
           </div>
-          <motion.div
-            className="flex justify-center mt-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            {images.map((_, index) => (
-              <motion.span
-                key={index}
-                className={`h-2 w-2 mx-1 rounded-full ${
-                  index === currentSlide ? 'bg-[#49A79D]' : 'bg-gray-300'
-                }`}
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-              />
-            ))}
-          </motion.div>
         </div>
       </div>
     </div>

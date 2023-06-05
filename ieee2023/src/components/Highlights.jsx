@@ -51,7 +51,7 @@ export default Highlights;
 const Type1 = ({ number, title, icon }) => {
   return (
     <article className="flex w-full overflow-hidden">
-      <div className="w-1/2 flex flex-col items-end pr-8 justify-center skew-x-[-30deg] border-r-4 border-r-slate-900 border-t-2 border-t-[#49A79D] border-b-4 border-b-[#49A79D] ">
+      <div className="w-1/2 flex flex-col items-end pr-8 justify-center skew-x-[-30deg] border-r-4 border-r-[#49A79D] border-t-2 border-t-[#49A79D] border-b-4 border-b-[#49A79D] ">
         <div className="inside skew-x-[30deg] flex flex-col items-center justify-center m-2">
           <AnimatedNumbers
             fontStyle={{
@@ -97,7 +97,7 @@ const Type2 = ({ number, title, icon }) => {
       >
         {icon}
       </div>
-      <div className="w-1/2 flex flex-col items-start  justify-center skew-x-[-30deg] border-l-4 border-l-slate-900 border-t-2 border-t-[#49A79D] border-b-4 border-b-[#49A79D] ">
+      <div className="w-1/2 flex flex-col items-start  justify-center skew-x-[-30deg] border-l-4 border-l-[#49A79D] border-t-2 border-t-[#49A79D] border-b-4 border-b-[#49A79D] ">
         <div className="inside skew-x-[30deg] flex flex-col items-center justify-center m-2">
           <AnimatedNumbers
             fontStyle={{

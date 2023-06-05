@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo4 from '../assets/logo3.png';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,26 +17,45 @@ const Navbar = () => {
     closed: { opacity: 0, y: -100 },
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-white pt-3">
+    <nav className={`bg-white pt-3 pb-3 ${isScrolled ? 'fixed top-0 z-50 w-full' : ''}`}>
       <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-8">
         <div className="flex justify-between h-8">
           <div className="flex-shrink-0 flex items-center">
-            <img src={logo4} alt="IEEE Icon" className="h-9 mt-2"/>
+            <img src={logo4} alt="IEEE Icon" className="h-9 mt-2" />
           </div>
           <div className="hidden md:block">
             <div className="flex space-x-4">
               <Link
                 to="/"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
-              > 
+              >
                 Home
               </Link>
-              <Link
+              <HashLink
+                smooth
                 to="/about"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
               >
                 About
+              </HashLink>
+              <Link
+                to="/highlights"
+                className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+              >
+                Highlights
               </Link>
               <Link
                 to="/events"
@@ -48,12 +69,7 @@ const Navbar = () => {
               >
                 Execom
               </Link>
-              <Link
-                to="/highlights"
-                className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
-              >
-                Highlights
-              </Link>
+
               <Link
                 to="/contacts"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
@@ -100,7 +116,7 @@ const Navbar = () => {
                 }}
                 transition={{ duration: 0.3 }}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </motion.svg>
             </motion.button>
           </div>
