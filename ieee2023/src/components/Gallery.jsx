@@ -2,14 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 import animation from '../assets/86897-gallery-icon-animation.json';
+import img1 from '../assets/gallery/evehack01.jpeg';
+import img2 from '../assets/gallery/evehack02.jpeg';
+import img3 from '../assets/gallery/evehack03.jpeg';
+import img4 from '../assets/gallery/evehack04.jpeg';
+
 
 const Gallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80',
-    'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
-    'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80',
-    'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80'
+    img1,
+    img2,
+    img3,
+    img4,
   ];
   const intervalDuration = 3000; // 3 seconds interval
 

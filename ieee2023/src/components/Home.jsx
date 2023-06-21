@@ -11,14 +11,22 @@ import Societies from './Societies'
 function Home() {
   return (
     <div>
-       <Navbar/>
-        <Hero/>
-        <About/>
-        <Highlights/>
-        <Gallery/>
-        <Societies/>
+      <Navbar />
+      <section id='home'>
+      <Hero />
+      </section>
+      <section id="about">
+
+        <About />
+      </section>
+      <section id="highlights">
+        <Highlights />
+      </section>
+      <Gallery />
+      <Societies />
     </div>
-  )
+  );
 }
+
 
 export default Home

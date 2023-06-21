@@ -10,7 +10,12 @@ const Card = ({ imgSrc, name, position, ieeeno }) => {
       transition={{ duration: 0.3 }}
     >
       <div className="flex items-center justify-center mb-2">
-        <img src={imgSrc} alt={name} className="w-full object-cover mt-3" />
+        <img
+          src={imgSrc}
+          alt={name}
+          className="w-24 h-24 object-contain mt-3"
+          style={{ maxHeight: '150px', maxWidth: '300px' }}
+        />
       </div>
       <div className="text-lg font-medium">{name}</div>
       <div className="text-sm">{position}</div>

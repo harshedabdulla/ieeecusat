@@ -29,7 +29,7 @@ function Hero() {
     <div>
       <section className="bg-black dark:bg-violet-900 mt-4 w-screen">
         <motion.div
-          className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+          className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 sm:py-24"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

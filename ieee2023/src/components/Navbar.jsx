@@ -39,43 +39,47 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="flex space-x-4">
               <Link
-                to="/"
+                to="/#home"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
               >
                 Home
               </Link>
               <HashLink
                 smooth
-                to="/about"
+                to="/#about"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
               >
                 About
               </HashLink>
-              <Link
-                to="/highlights"
+              <HashLink
+                smooth
+                to="/#highlights"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
               >
                 Highlights
-              </Link>
-              <Link
+              </HashLink>
+              <HashLink
+                smooth
                 to="/events"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
               >
                 Events
-              </Link>
-              <Link
+              </HashLink>
+              <HashLink
+                smooth
                 to="/execom"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
               >
                 Execom
-              </Link>
+              </HashLink>
 
-              <Link
+              <HashLink
+                smooth
                 to="/contacts"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
               >
                 Contacts
-              </Link>
+              </HashLink>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -132,11 +136,11 @@ const Navbar = () => {
       >
         <div className="px-2 pt-4 pb-3 space-y-1 sm:px-3 shadow-sm">
           <Link to="/" className="hover:text-gray-900 block px-3 py-2 text-base">Home</Link>
-          <Link to="/about" className="hover:text-gray-900 block px-3 py-2 text-base">About</Link>
-          <Link to="/events" className="hover:text-gray-900 block px-3 py-2 text-base">Events</Link>
-          <Link to="/execom" className="hover:text-gray-900 block px-3 py-2 text-base">Execom</Link>
-          <Link to="/highlights" className="hover:text-gray-900 block px-3 py-2 text-base">Highlights</Link>
-          <Link to="/contacts" className="hover:text-gray-900 block px-3 py-2 text-base">Contacts</Link>
+          <HashLink to="/#about" className="hover:text-gray-900 block px-3 py-2 text-base">About</HashLink>
+          <HashLink to="/events" className="hover:text-gray-900 block px-3 py-2 text-base">Events</HashLink>
+          <HashLink to="/execom" className="hover:text-gray-900 block px-3 py-2 text-base">Execom</HashLink>
+          <HashLink to="/#highlights" className="hover:text-gray-900 block px-3 py-2 text-base">Highlights</HashLink>
+          <HashLink to="/contacts" className="hover:text-gray-900 block px-3 py-2 text-base">Contacts</HashLink>
         </div>
       </motion.div>
     </nav>

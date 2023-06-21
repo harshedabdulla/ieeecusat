@@ -50,7 +50,7 @@ const Societies = () => {
   return (
     <div className="flex flex-col items-center mt-12">
       <h1 className="text-4xl text-center text-orange-400 mb-4">Societies</h1>
-      <h2 className="text-xl text-[#49A79D] mb-8">Student branch chapters and affinity groups</h2>
+      <h2 className="text-xl text-[#49A79D] mb-8 text-center">Student branch chapters and affinity groups</h2>
       <div className="flex flex-wrap justify-center px-4 mx-16">
         {societies.map((society) => (
           <div
