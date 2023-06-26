@@ -8,6 +8,7 @@ import Highlights from './components/Highlights'
 import Contacts from './components/Contacts'
 import About from './components/About'
 import Gallery from './components/Gallery'
+import Newsletters from './components/Newsletters'
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contacts' element={<Contacts/>} />
         <Route path='/highlights' element={<Highlights/>} />
         <Route path='/gallery' element={<Gallery/>} />
+        <Route path='/newsletters' element={<Newsletters/>} />
 
       </Routes>
       <Footer/>
