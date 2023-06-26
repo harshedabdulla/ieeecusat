@@ -128,13 +128,14 @@ const Navbar = () => {
       </div>
 
       <motion.div
-        className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}
+        className="md:hidden fixed inset-0 bg-white z-50"
+        style={{ opacity: isMenuOpen ? 1 : 0, pointerEvents: isMenuOpen ? 'auto' : 'none' }}
         initial="closed"
         animate={isMenuOpen ? 'open' : 'closed'}
         variants={menuVariants}
         transition={{ duration: 0.3 }}
       >
-        <div className="px-2 pt-4 pb-3 space-y-1 sm:px-3 shadow-sm">
+       <div className="w-full max-w-sm px-2 pt-4 pb-3 space-y-1 sm:px-3 shadow-sm">
           <Link to="/" className="hover:text-gray-900 block px-3 py-2 text-base">Home</Link>
           <HashLink to="/#about" className="hover:text-gray-900 block px-3 py-2 text-base">About</HashLink>
           <HashLink to="/events" className="hover:text-gray-900 block px-3 py-2 text-base">Events</HashLink>
