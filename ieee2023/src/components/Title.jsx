@@ -16,7 +16,7 @@ const Title = ({ title }) => {
       transition={{ duration: 0.5 }}
     >
       <motion.h1
-        className="text-white text-6xl md:text-6xl lg:text-4xl p-20"
+        className="text-white text-6xl md:text-6xl lg:text-6xl p-20"
         initial="hidden"
         animate="visible"
         variants={textVariants}

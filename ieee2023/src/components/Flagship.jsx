@@ -26,7 +26,7 @@ const Flagship = ({ event }) => {
               variants={textVariants}
               transition={{ duration: 0.5 }}
             >
-              Slashkey 2.0
+              AKSC'23
             </motion.h2>
             <div>
               <motion.p
