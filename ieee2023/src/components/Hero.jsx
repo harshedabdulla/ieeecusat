@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 import animation from '../assets/84855-engineering-infrastructure.json';
 import { Link } from 'react-router-dom';
+import adm from '../assets/adm.png'
 
 function Hero() {
   const containerVariants = {

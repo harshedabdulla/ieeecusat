@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import logocusat2 from '../assets/logocusat2.png';
+// import logocusat2 from '../assets/logocusat2.png';
+import adm from '../assets/adm.png';
 import Navbar from './Navbar';
 
 const About = () => {
@@ -26,15 +27,15 @@ const About = () => {
         <div className="flex flex-col sm:flex-row mt-8">
           <div className="w-full sm:w-2/5">
             <motion.div
-              className="flex items-center justify-center sm:justify-start h-full w-auto"
+              className="flex items-center justify-center sm:justify-start"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <img
-                src={logocusat2}
+                src={adm}
                 alt="IEEE Logo"
-                className="h-64 w-64 object-contain"
+                className="h-64 w-fill object-contain px-8"
               />
             </motion.div>
           </div>

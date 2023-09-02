@@ -51,16 +51,21 @@ const Societies = () => {
     <div className="flex flex-col items-center mt-12">
       <h1 className="text-4xl text-center text-orange-400 mb-4">Societies</h1>
       <h2 className="text-xl text-[#49A79D] mb-8 text-center">Student branch chapters and affinity groups</h2>
-      <div className="flex flex-wrap justify-center px-4 mx-16">
+      <div className="flex flex-wrap justify-center px-4 py-4 mx-16">
         {societies.map((society) => (
           <div
             key={society.id}
-            className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2"
+            className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4
+            border-2 border-[#49A79D] rounded-lg p-2 m-4
+            hover:shadow-xl transition duration-300 ease-in-out
+            "
           >
             <img
               src={society.imageSrc}
               alt={society.name}
-              className="w-64 h-auto rounded-lg"
+              className="w-40 h-36 text-center mx-auto hover:scale-110 transition duration-300 ease-in-out"
+
+
             />
           </div>
         ))}
