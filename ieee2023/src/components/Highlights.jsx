@@ -18,7 +18,7 @@ function Highlights() {
     <>
       
       <section className="min-h-80vh h-full text-black flex flex-col gap-8 items-center justify-center mt-4">
-        <h1 className="text-4xl  text-orange-400">Highlights</h1>{" "}
+        <h1 className="text-5xl  text-orange-400">Highlights</h1>{" "}
         <Type1
           number={memberCount}
           title="Member Count"

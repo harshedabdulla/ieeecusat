@@ -36,7 +36,7 @@ const Gallery = () => {
       <div className="w-4/5">
         <div className="relative bg-white rounded-lg overflow-hidden border-2 border-[#49A79D] px-8 mt-4 pb-8 mb-8">
           <motion.h1
-            className="text-center text-4xl py-8 text-orange-400"
+            className="text-center text-5xl py-8 text-orange-400"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}

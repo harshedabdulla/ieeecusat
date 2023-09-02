@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo4 from '../assets/logo3.png';
+import logo4 from '../assets/logocusat2.png';
 import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="flex justify-between h-8">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
-            <img src={logo4} alt="IEEE Icon" className="h-9 mt-2" />
+            <img src={logo4} alt="IEEE Icon" className="w-36 h-auto my-2" />
             </Link>
           </div>
           <div className="hidden md:block">

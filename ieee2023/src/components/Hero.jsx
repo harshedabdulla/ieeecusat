@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 import animation from '../assets/84855-engineering-infrastructure.json';
 import { Link } from 'react-router-dom';
-import adm from '../assets/adm.png'
+import { HashLink } from 'react-router-hash-link';
 
 function Hero() {
   const containerVariants = {
@@ -68,6 +68,11 @@ function Hero() {
                 EVENTS
               </motion.a>
             </Link>
+            <HashLink
+                smooth
+                to="/#about"
+                className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+              >
             <motion.a
               href="#"
               className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-[#49A79D] border border-[#49A79D] rounded-lg focus:ring-4 focus:ring-gray-100"
@@ -75,6 +80,7 @@ function Hero() {
             >
               Learn more
             </motion.a>
+            </HashLink>
           </div>
           <motion.div
             className="lg:mt-0 lg:col-span-5 lg:flex hidden md:block"
