@@ -4,8 +4,10 @@ import Lottie from 'lottie-react';
 import animation from '../assets/84855-engineering-infrastructure.json';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import ParticlesBG from './ParticlesBG';
 
 function Hero() {
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 0.5 } }
@@ -25,10 +27,13 @@ function Hero() {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.6 } }
   };
+  
 
   return (
-    <div>
-      <section className="bg-black mt-4 w-screen ">
+    <div className="hero-section relative">
+      <ParticlesBG />
+      <section className="mt-4 w-screen relative">
+      
         <motion.div
           className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 sm:py-24"
           variants={containerVariants}
@@ -89,7 +94,9 @@ function Hero() {
             <Lottie animationData={animation} height={400} width={300} />
           </motion.div>
         </motion.div>
+       
       </section>
+     
     </div>
   );
 }
