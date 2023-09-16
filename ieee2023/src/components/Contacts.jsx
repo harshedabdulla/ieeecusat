@@ -8,7 +8,7 @@ function Contacts() {
 
     <div className="container mx-auto py-8">
       
-      <h1 className="text-3xl text-orange-400 text-center mb-12">Contact Us</h1>
+      <h1 className="text-3xl text-blue-900 text-center mb-12 ">Contact Us</h1>
       
       <div className="flex flex-wrap -mx-4">
         <div className="w-full md:w-1/2 px-8 mb-6">

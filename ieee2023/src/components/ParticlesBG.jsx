@@ -18,7 +18,7 @@ const ParticlesBG = () => {
         },
         "particles": {
             "number": {
-                "value": window.innerWidth < 768 ? 3 : 7, 
+                "value": window.innerWidth < 768 ? 0 : 7, 
                 "density": {
                     "enable": false,
                     "value_area": 800
