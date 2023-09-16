@@ -11,7 +11,7 @@ function Contacts() {
       <h1 className="text-3xl text-orange-400 text-center mb-12">Contact Us</h1>
       
       <div className="flex flex-wrap -mx-4">
-        <div className="w-full md:w-1/2 px-4 mb-6">
+        <div className="w-full md:w-1/2 px-8 mb-6">
           <h2 className="text-3xl  mb-2">Contact Information</h2>
           <p className="mb-2">Cochin University of Science and Technology</p>
           <p className="mb-2">University Road ,South Kalamassery, Kochi, Kerala</p>
@@ -20,7 +20,7 @@ function Contacts() {
           
         </div>
         
-        <div className="w-full md:w-1/2 px-4 mb-6">
+        <div className="w-full md:w-1/2 px-8 mb-6">
          
           <form>
             <div className="mb-4">
