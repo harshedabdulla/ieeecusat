@@ -7,7 +7,7 @@ import aksc from '../assets/event/aksc.jpeg';
 import back from '../assets/event/back.jpeg';
 import congo from '../assets/event/congo.jpeg';
 import sight from '../assets/event/sight.jpeg';
-import tthunt from '../assets/event/tthunt.jpeg';
+
 
 
 function Events() {

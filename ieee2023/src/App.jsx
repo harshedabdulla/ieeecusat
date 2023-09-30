@@ -9,10 +9,12 @@ import Contacts from './components/Contacts'
 import About from './components/About'
 import Gallery from './components/Gallery'
 import Newsletters from './components/Newsletters'
+import Credits from './components/Credits'
+import Navbar from './components/Navbar'
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+    <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/execom' element={<Execom/>} />
         <Route path='/events' element={<Events/>} />
@@ -21,6 +23,7 @@ function App() {
         <Route path='/highlights' element={<Highlights/>} />
         <Route path='/gallery' element={<Gallery/>} />
         <Route path='/newsletters' element={<Newsletters/>} />
+        <Route path='/credits' element={<Credits/>} />
 
       </Routes>
       <Footer/>

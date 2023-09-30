@@ -24,7 +24,7 @@ const About = () => {
         >
           IEEE CUSAT STUDENT BRANCH
         </motion.p>
-        <div className="flex flex-col sm:flex-row mt-8">
+        <div className="flex flex-col sm:flex-row mt-4">
           <div className="w-full sm:w-2/5">
             <motion.div
               className="flex items-center justify-center sm:justify-start"

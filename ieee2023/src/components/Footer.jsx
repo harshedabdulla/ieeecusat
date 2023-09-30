@@ -3,6 +3,7 @@ import logo2 from '../assets/logo2d.png';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { HiMail } from 'react-icons/hi';
 import { ImLocation } from 'react-icons/im'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -27,6 +28,7 @@ const Footer = () => {
                         <li>IEEE Xplore</li>
                         <li>IEEE Collabratec</li>
                         <li>IEEE Spectrum</li>
+                        <Link to='/Credits'>Credits</Link>
                     </ul>
                     <form action="" className='border-2 border-white rounded-full form__bg p-2 text-white flex gap-4'>
                         <input className='bg-transparent' type="text" placeholder='Enter Your Email' />
@@ -60,6 +62,7 @@ const Footer = () => {
 
             <div className='flex items-center justify-center w-full text-white'>
                 <p>Copyright © 2023 IEEE Cusat SB . All Rights Reserved</p>
+                
             </div>
         </footer>
     )
