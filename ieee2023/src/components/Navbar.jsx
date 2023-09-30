@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <nav className={`bg-white pt-3 pb-3 ${isScrolled ? 'fixed top-0 z-50 w-full' : ''}`}>
-      <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-8">
+      <div className="max-w-8xl mx-auto px-2 sm:px-2 lg:px-8">
         <div className="flex justify-between h-8">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">

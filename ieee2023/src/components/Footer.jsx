@@ -24,17 +24,17 @@ const Footer = () => {
                 <div className='w-full md:w-1/3 h-full flex flex-col items-center justify-center gap-6 text-white'>
                     <h4 className='font-bold mt-2 md:mt-6'>IMPORTANT LINKS</h4>
                     <ul>
-                        <li>IEEE Official Website</li>
-                        <li>IEEE Xplore</li>
-                        <li>IEEE Collabratec</li>
-                        <li>IEEE Spectrum</li>
-                        <Link to='/Credits' onClick={() => {
+                        <li><a href="https://www.ieee.org/">IEEE Official Website</a></li>
+                        <li><a href='https://ieeexplore.ieee.org/Xplore/home.jsp'>IEEE Xplore</a></li>
+                        <li><a href='https://ieee-collabratec.ieee.org/'>IEEE Collabratec</a></li>
+                        <li><a href='https://spectrum.ieee.org/'>IEEE Spectrum</a></li>
+                        <Link to='/Credits' className='text-xl' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
-  }}>Credits</Link>
+  }}>Website Credits</Link>
                     </ul>
                     <form action="" className='border-2 border-white rounded-full form__bg p-2 text-white flex gap-4'>
                         <input className='bg-transparent' type="text" placeholder='Enter Your Email' />
@@ -47,8 +47,8 @@ const Footer = () => {
 
                     <div className='flex flex-col gap-4'>
                         <div className='flex items-center justify-start gap-2 text-lg'>
-                            <BsFillTelephoneFill className='text-white text-4xl' />
-                            <p>+919334653551<br></br>+919334653551</p>
+                            <BsFillTelephoneFill className='text-white text-3xl' />
+                            <p>+91 77368 18023<br></br>+91 70340 59919</p>
                         </div>
 
                         <div className='flex items-center justify-start gap-2 text-lg'>
