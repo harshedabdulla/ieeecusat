@@ -9,7 +9,7 @@ const Title = ({ title }) => {
 
   return (
     <motion.section
-      className="flex justify-center items-center bg-blue-900 mt-6 mb-8 p-8"
+      className="flex justify-center items-center bg-blue-900 mb-8 p-8"
       initial="hidden"
       animate="visible"
       variants={textVariants}

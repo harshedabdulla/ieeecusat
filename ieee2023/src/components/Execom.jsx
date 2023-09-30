@@ -15,13 +15,16 @@ import ATHULSHA from '../assets/execom/ATHULSHA.jpeg'
 import Diksha from '../assets/execom/Diksha.jpg'
 import Eldhose from '../assets/execom/Eldhose.jpg'
 import Evlyn from '../assets/execom/Evlyn.jpg'
+import Nandana from '../assets/execom/nandana.jpeg'
+import Abhijith from '../assets/execom/abhijith.jpeg'
 //import Ghaadha from '../assets/execom/Ghaadha.heic'
+import nandu from '../assets/execom/nandu.jpeg'
 import Gokul from '../assets/execom/Gokul.jpg'
-//import Harimurali from '../assets/execom/Harimurali.heic'
+import Harimurali from '../assets/execom/Harimurali.jpeg'
 import Harshed from '../assets/execom/Harshed.jpg'
 import John from '../assets/execom/John.jpg'
 import Kevin from '../assets/execom/Kevin.jpg'
-//import Lakshmi from '../assets/execom/Lakshmi.jpeg'
+import Lakshmi from '../assets/execom/Lakshmim.jpeg'
 import Malavika from '../assets/execom/Malavika.jpg'
 import Manasi from '../assets/execom/Manasi.jpg'
 import Mohit from '../assets/execom/Mohit.jpg'
@@ -50,15 +53,15 @@ function Execom() {
       <Card imgSrc={Nayana} name="Nayana Rajeev" position="Secretory" ieeeno="20BCE10001" />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc="https://via.placeholder.com/150" name="Harimurali" position="Vice Chair" ieeeno="20BCE10001" />
+      <Card imgSrc={Harimurali} name="Harimurali" position="Vice Chair" ieeeno="20BCE10001" />
     </div>
     </div>
     <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc="https://via.placeholder.com/150" name="Lakshmi Menon" position="Joint Secretory" ieeeno="20BCE10001" />
+      <Card imgSrc={Lakshmi} name="Lakshmi Menon" position="Joint Secretory" ieeeno="20BCE10001" />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc="https://via.placeholder.com/150" name="Nandu" position="ECC" ieeeno="20BCE10001" />
+      <Card imgSrc={nandu} name="Nandu" position="ECC" ieeeno="20BCE10001" />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
       <Card imgSrc={Mrudul} name="Mrudul John" position="LINK Rep" ieeeno="20BCE10001" />
@@ -85,7 +88,7 @@ function Execom() {
    
   <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc="https://via.placeholder.com/150" name="Nandana S" position="WIC" ieeeno="20BCE10001" />
+      <Card imgSrc={Nandana} name="Nandana S" position="WIC" ieeeno="20BCE10001" />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
       <Card imgSrc={Pravaal} name="Praval B Nath" position="SIG AI" ieeeno="20BCE10001" />
@@ -136,7 +139,7 @@ function Execom() {
       <Card imgSrc={Sandra} name="Sandra Rajesh" position="Head" ieeeno="20BCE10001" />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc="https://via.placeholder.com/150" name="Abhijith P" position="Associate" ieeeno="20BCE10001" />
+      <Card imgSrc={Abhijith} name="Abhijith P" position="Associate" ieeeno="20BCE10001" />
     </div>
   </div>
   <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">

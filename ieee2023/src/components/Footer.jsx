@@ -28,7 +28,13 @@ const Footer = () => {
                         <li>IEEE Xplore</li>
                         <li>IEEE Collabratec</li>
                         <li>IEEE Spectrum</li>
-                        <Link to='/Credits'>Credits</Link>
+                        <Link to='/Credits' onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }}>Credits</Link>
                     </ul>
                     <form action="" className='border-2 border-white rounded-full form__bg p-2 text-white flex gap-4'>
                         <input className='bg-transparent' type="text" placeholder='Enter Your Email' />

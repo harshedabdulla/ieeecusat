@@ -64,6 +64,13 @@ const Navbar = () => {
                 smooth
                 to="/events"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Events
               </HashLink>
@@ -71,6 +78,13 @@ const Navbar = () => {
                 smooth
                 to="/execom"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Execom
               </HashLink>
@@ -79,6 +93,13 @@ const Navbar = () => {
                 smooth
                 to="/contacts"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Contacts
               </HashLink>

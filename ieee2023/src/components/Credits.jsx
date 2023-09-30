@@ -4,6 +4,7 @@ import Title from './Title';
 import Cards2 from './Cards2';
 import Harsh from '../assets/execom/Harshed.jpg';
 import Adi from '../assets/execom/aditya.jpeg';
+import eldhose from '../assets/execom/eldhose.jpg';
 
 const Credits = () => {
   return (
@@ -29,11 +30,11 @@ const Credits = () => {
             />
          
             <Cards2
-              imageSrc={Harsh}
+              imageSrc={eldhose}
               name="Eldhose"
               profession="Web Developer"
               institution="S5 EC"
-              connectLink=""
+              connectLink="https://in.linkedin.com/in/eldhose-iype-a02145214"
             />
          
        

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cards2 = ({ imageSrc, name, profession, institution, connectLink }) => {
   return (
-    <div className='w-[200px] h-[280px] bg-transparent cursor-pointer group perspective'>
+    <div className='w-[200px] h-[260px] bg-transparent cursor-pointer group perspective'>
       <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
         <div className='absolute backface-hidden border-2 w-full h-full'>
           <img src={imageSrc} alt={name} className='w-full h-full' />
@@ -14,7 +14,7 @@ const Cards2 = ({ imageSrc, name, profession, institution, connectLink }) => {
             <p className='text-xl'>{institution}</p>
             <a
               href={connectLink}
-              className='bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125'
+              className='bg-teal-500 px-4 py-1 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125'
             >
               Connect
             </a>
