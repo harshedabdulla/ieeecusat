@@ -204,7 +204,13 @@ const Navbar = () => {
                     behavior: "smooth",
                   });
                 }}>Home</Link>
-          <HashLink to="/#about" className="hover:text-gray-900 block px-3 py-2 text-base">About</HashLink>
+          <HashLink to="/gallery2" className="hover:text-gray-900 block px-3 py-2 text-base" onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}>Gallery</HashLink>
           <HashLink to="/events" className="hover:text-gray-900 block px-3 py-2 text-base" onClick={() => {
                   window.scroll({
                     top: 0,
@@ -219,7 +225,6 @@ const Navbar = () => {
                     behavior: "smooth",
                   });
                 }}>Execom</HashLink>
-          <HashLink to="/#highlights" className="hover:text-gray-900 block px-3 py-2 text-base">Highlights</HashLink>
           <HashLink to="/contacts" className="hover:text-gray-900 block px-3 py-2 text-base" onClick={() => {
                   window.scroll({
                     top: 0,

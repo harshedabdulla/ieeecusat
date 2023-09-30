@@ -5,6 +5,15 @@ import p2 from '../assets/gallery/evehack01.jpeg'
 import p3 from '../assets/gallery/evehack02.jpeg'
 import p4 from '../assets/gallery/evehack03.jpeg'
 import p5 from '../assets/gallery/evehack04.jpeg'
+import p6 from '../assets/gallery/l1.jpeg'
+import p7 from '../assets/gallery/l2.jpeg'
+import p8 from '../assets/gallery/l3.jpeg'
+import p9 from '../assets/gallery/l4.jpeg'
+import p10 from '../assets/gallery/l5.jpeg'
+import p11 from '../assets/gallery/l6.jpeg'
+import p12 from '../assets/gallery/l7.jpeg'
+import p13 from '../assets/gallery/l8.jpeg'
+
 
 const Gallery2 = () => {
   return (
@@ -17,6 +26,15 @@ const Gallery2 = () => {
     <img src={p3} alt="image" />
     <img src={p4} alt="image" />
     <img src={p5} alt="image" />
+    <img src={p6} alt="image" />
+    <img src={p7} alt="image" />
+    <img src={p8} alt="image" />
+    <img src={p9} alt="image" />
+    <img src={p10} alt="image" />
+    <img src={p11} alt="image" />
+    <img src={p12} alt="image" />
+    <img src={p13} alt="image" />
+    
   </div>
 </div>
 
