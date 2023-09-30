@@ -43,6 +43,13 @@ const Navbar = () => {
               <Link
                 to="/#home"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Home
               </Link>
@@ -73,6 +80,20 @@ const Navbar = () => {
                 }}
               >
                 Events
+              </HashLink>
+              <HashLink
+                smooth
+                to="/gallery2"
+                className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Gallery
               </HashLink>
               <HashLink
                 smooth
@@ -176,12 +197,36 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <Link to="/" className="hover:text-gray-900 block px-3 py-2 text-base">Home</Link>
+          <Link to="/" className="hover:text-gray-900 block px-3 py-2 text-base" onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}>Home</Link>
           <HashLink to="/#about" className="hover:text-gray-900 block px-3 py-2 text-base">About</HashLink>
-          <HashLink to="/events" className="hover:text-gray-900 block px-3 py-2 text-base">Events</HashLink>
-          <HashLink to="/execom" className="hover:text-gray-900 block px-3 py-2 text-base">Execom</HashLink>
+          <HashLink to="/events" className="hover:text-gray-900 block px-3 py-2 text-base" onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}>Events</HashLink>
+          <HashLink to="/execom" className="hover:text-gray-900 block px-3 py-2 text-base" onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}>Execom</HashLink>
           <HashLink to="/#highlights" className="hover:text-gray-900 block px-3 py-2 text-base">Highlights</HashLink>
-          <HashLink to="/contacts" className="hover:text-gray-900 block px-3 py-2 text-base">Contacts</HashLink>
+          <HashLink to="/contacts" className="hover:text-gray-900 block px-3 py-2 text-base" onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}>Contacts</HashLink>
         </div>
       </motion.div>
     </nav>

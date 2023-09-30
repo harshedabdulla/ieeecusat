@@ -48,7 +48,7 @@ function Hero() {
               IEEE STUDENT BRANCH
             </motion.h3>
             <motion.h6
-              className="max-w-4xl mb-4 tracking-tight leading-none xl:text-2xl font-extrabold text-white"
+              className="max-w-4xl mb-4 tracking-tight leading-none xl:text-3xl font-extrabold text-white"
               variants={textVariants}
             >
               COCHIN UNIVERSITY OF SCIENCE AND TECHNOLOGY

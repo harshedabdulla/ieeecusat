@@ -10,7 +10,7 @@ import About from './components/About'
 import Gallery from './components/Gallery'
 import Newsletters from './components/Newsletters'
 import Credits from './components/Credits'
-import Navbar from './components/Navbar'
+import Gallery2 from './components/Gallery2'
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +24,7 @@ function App() {
         <Route path='/gallery' element={<Gallery/>} />
         <Route path='/newsletters' element={<Newsletters/>} />
         <Route path='/credits' element={<Credits/>} />
+        <Route path='/gallery2' element={<Gallery2/>} />
 
       </Routes>
       <Footer/>
