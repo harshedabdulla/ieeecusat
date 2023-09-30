@@ -11,6 +11,7 @@ import Gallery from './components/Gallery'
 import Newsletters from './components/Newsletters'
 import Credits from './components/Credits'
 import Gallery2 from './components/Gallery2'
+import Execom2 from './components/Execom2'
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ function App() {
         <Route path='/newsletters' element={<Newsletters/>} />
         <Route path='/credits' element={<Credits/>} />
         <Route path='/gallery2' element={<Gallery2/>} />
+        <Route path='/execom2' element={<Execom2/>} />
 
       </Routes>
       <Footer/>

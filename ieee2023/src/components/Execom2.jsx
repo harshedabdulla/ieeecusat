@@ -1,7 +1,7 @@
 import React from 'react'
+import Cards2 from './Cards2'
 import Navbar from './Navbar'
 import Title from './Title'
-import Card from './Card'
 import Aadarsh from '../assets/execom/Aadarsh.jpeg'
 import Adarsh from '../assets/execom/Adarsh.jpg'
 import Ajmal from '../assets/execom/Ajmal.png'
@@ -39,27 +39,53 @@ import SRADHA from '../assets/execom/SRADHA.jpg'
 import TANU from '../assets/execom/TANU.jpg'
 
 import vignesh from '../assets/execom/vignesh.jpeg'
+import Card from './Card'
 
-function Execom() {
+
+const Execom2 = () => {
   return (
     <div>
         <Navbar />
-        <Title title="EXECOM '23" />
+        <Title title="Execom 23" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-7">
   <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc={Adarsh} name="Adarsh EC" position="Chairperson" ieeeno="S7 ECE" />
+    <Cards2
+              imageSrc={Adarsh}
+              name="Adarsh S"
+              profession="Chair"
+              institution="S7 ECE"
+              connectLink="https://www.linkedin.com/in/harshed-abdulla/"
+            />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc={Nayana} name="Nayana Rajeev" position="Secretory" ieeeno="20BCE10001" />
+    <Cards2
+              imageSrc={Nayana}
+              name="Nayana Rajeev"
+              profession="Secretory"
+              institution="S7 CSE"
+              connectLink="https://www.linkedin.com/in/harshed-abdulla/"
+            />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc={Harimurali} name="Harimurali" position="Vice Chair" ieeeno="S5 ECE" />
+    <Cards2
+              imageSrc={Harimurali}
+              name="Harimurali S"
+              profession="Vice Chair"
+              institution="S5 ECE"
+              connectLink="https://www.linkedin.com/in/harshed-abdulla/"
+            />
     </div>
     </div>
     <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc={Lakshmi} name="Lakshmi Menon" position="Joint Secretory" ieeeno="20BCE10001" />
+    <Cards2
+              imageSrc={Lakshmi}
+              name="Lakshmi Menon"
+              profession="Joint Secretory"
+              institution="S5 CSE"
+              connectLink="https://www.linkedin.com/in/harshed-abdulla/"
+            />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
       <Card imgSrc={nandu} name="Nandu" position="ECC" ieeeno="S7 ECE" />
@@ -152,11 +178,10 @@ function Execom() {
     </div>
   </div>
 </div>
-</div>
 
-
-
+    </div>
+    
   )
 }
 
-export default Execom
+export default Execom2

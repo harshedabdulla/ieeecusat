@@ -6,6 +6,7 @@ import Harsh from '../assets/execom/Harshed.jpg';
 import Adi from '../assets/execom/aditya.jpeg';
 import eldhose from '../assets/execom/eldhose.jpg';
 
+
 const Credits = () => {
   return (
     <div>
@@ -36,7 +37,7 @@ const Credits = () => {
               institution="S5 EC"
               connectLink="https://in.linkedin.com/in/eldhose-iype-a02145214"
             />
-         
+           
        
            
     </div>
