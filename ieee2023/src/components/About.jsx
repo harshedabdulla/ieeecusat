@@ -9,7 +9,7 @@ const About = () => {
     <div className="flex flex-col items-center justify-center mt-8">
       <div className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-5/6">
         <motion.h1
-          className="text-5xl text-center text-orange-400"
+          className="text-3xl text-center text-orange-400"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
