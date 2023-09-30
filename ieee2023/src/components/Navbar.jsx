@@ -63,7 +63,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#highlights"
-                className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+                className="hover:text-gr  ay-900 px-3 py-2 rounded-md text-sm"
               >
                 Highlights
               </HashLink>

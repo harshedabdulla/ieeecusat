@@ -19,7 +19,7 @@ const Card = ({ imgSrc, name, position, ieeeno }) => {
       </div>
       <div className="text-lg font-medium">{name}</div>
       <div className="text-sm">{position}</div>
-      <div className="text-xs mt-1">IEEE No: {ieeeno}</div>
+      <div className="text-xs mt-1">{ieeeno}</div>
     </motion.div>
   );
 };
