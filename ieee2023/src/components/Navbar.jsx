@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <nav className={`bg-white pt-3 pb-3 ${isScrolled ? 'fixed top-0 z-50 w-full' : ''}`}>
-      <div className="max-w-8xl mx-auto px-2 sm:px-2 lg:px-8">
+      <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-8">
         <div className="flex justify-between h-8">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
@@ -158,7 +158,7 @@ const Navbar = () => {
         variants={menuVariants}
         transition={{ duration: 0.3 }}
       >
-        <div className="w-full max-w-sm px-2 pt-4 pb-3 space-y-1 sm:px-3 shadow-sm">
+        <div className="w-full max-w-sm px-2 pt-4 pb-3 space-y-6 sm:px-3 shadow-sm text-center text-2xl">
           <button
             type="button"
             className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
