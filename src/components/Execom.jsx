@@ -37,7 +37,9 @@ import Sameer from '../assets/execom/Sameer.jpeg'
 import Sandra from '../assets/execom/Sandra.jpg'
 import SRADHA from '../assets/execom/SRADHA.jpg'
 import TANU from '../assets/execom/TANU.jpg'
-
+import Vinod from '../assets/execom/vinod.jpeg'
+import Yadhu from '../assets/execom/yadhu.jpeg'
+import Hiba from '../assets/execom/hiba.jpeg'
 import vignesh from '../assets/execom/vignesh.jpeg'
 
 function Execom() {
@@ -123,6 +125,18 @@ function Execom() {
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
       <Card imgSrc={ATHULSHA} name="Athulsha K" position="RAS Secretory" ieeeno="S5 ECE" />
+    </div>
+  </div>
+  <h3 className="text-3xl text-center p-4 mb-4">PHOTONICS</h3>
+  <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Vinod} name="Angelo Antu" position="Photonics Chair" ieeeno="S5 CSE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Yadhu} name="Athulsha K" position="Secretory" ieeeno="S5 ECE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Hiba} name="Athulsha K" position="Joint Secretory" ieeeno="S5 ECE" />
     </div>
   </div>
   <h3 className="text-3xl text-center p-4 mb-4">PES</h3>
