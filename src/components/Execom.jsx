@@ -41,6 +41,9 @@ import Vinod from '../assets/execom/vinod.jpeg'
 import Yadhu from '../assets/execom/yadhu.jpeg'
 import Hiba from '../assets/execom/hiba.jpeg'
 import vignesh from '../assets/execom/vignesh.jpeg'
+import linsa from '../assets/execom/linsa.jpg'
+import malavikab from '../assets/execom/malavikab.jpeg'
+import lakshmi from '../assets/execom/lakshmi.jpeg'
 
 function Execom() {
   return (
@@ -130,15 +133,28 @@ function Execom() {
   <h3 className="text-3xl text-center p-4 mb-4">PHOTONICS</h3>
   <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc={Vinod} name="Angelo Antu" position="Photonics Chair" ieeeno="S5 CSE" />
+      <Card imgSrc={Vinod} name="Vinod P" position="Photonics Chair" ieeeno="S5 CSE" />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc={Yadhu} name="Athulsha K" position="Secretory" ieeeno="S5 ECE" />
+      <Card imgSrc={malavikab} name="Malavika B" position="Vice Chair" ieeeno="S5 ECE" />
     </div>
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
-      <Card imgSrc={Hiba} name="Athulsha K" position="Joint Secretory" ieeeno="S5 ECE" />
+      <Card imgSrc={linsa} name="Linsa G J" position="Treasurer" ieeeno="S5 ECE" />
     </div>
-  </div>
+    </div>
+    <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={lakshmi} name="Lakshmi S" position="Women in photonics coordinator" ieeeno="S5 CSE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Yadhu} name="Yadhukrishnan ET" position="Secretory" ieeeno="S5 ECE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Hiba} name="Hiba S" position="Joint Secretory" ieeeno="S5 ECE" />
+    </div>
+    </div>
+ 
+  
   <h3 className="text-3xl text-center p-4 mb-4">PES</h3>
   <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
@@ -148,6 +164,29 @@ function Execom() {
       <Card imgSrc="https://via.placeholder.com/150" name="Vishaka" position="PES Secretory" ieeeno="20BCE10001" />
     </div>
   </div>
+  <h3 className="text-3xl text-center p-4 mb-4">Media Team</h3>
+  <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Anand} name="Anand K Suni" position="Media Head" ieeeno="S5 CSE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={vignesh} name="Vignesh Krishnan KR" position="Media Associate" ieeeno="S5 ECE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Diksha} name="Diksha Srivastava" position="Media Associate" ieeeno="S5 ECE" />
+    </div>
+    </div>
+    <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={John} name="John Babu K" position="Media Associate" ieeeno="S5 CSE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Manasi} name="Manasi TP" position="Media Associate" ieeeno="S5 CSE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Kevin} name="Kevin Davees" position="Media Associate" ieeeno="S5 CSE" />
+    </div>
+    </div>
   <h3 className="text-3xl text-center p-4 mb-4">Outreach Team</h3>
   <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
     <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
@@ -165,6 +204,26 @@ function Execom() {
       <Card imgSrc={Archa} name="Archa S B" position="Associate" ieeeno="20BCE10001" />
     </div>
   </div>
+  <h3 className="text-3xl text-center p-4 mb-4">Content Team</h3>
+  <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={vignesh} name="Ghaada Sideeque" position="Content Head" ieeeno="S5 CSE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Manasi} name="Devu AP" position="Content Associate" ieeeno="S5 ECE" />
+    </div>
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Aadarsh} name="Adarsh PS" position="Content Associate" ieeeno="S5 ECE" />
+    </div>
+    </div>
+    <div className="flex flex-wrap justify-center lg:-mx-4 md:-mx-2">
+    <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
+      <Card imgSrc={Punnya} name="Punnya Nair" position="Content Associate" ieeeno="S5 CSE" />
+    </div>
+    </div>
+
+
+    
 </div>
 </div>
 

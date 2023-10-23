@@ -45,27 +45,7 @@ const Gallery = () => {
           </motion.h1>
           <div className="flex flex-col md:flex-row">
             <motion.div
-              className="w-full md:w-1/2 h-80 flex flex-col justify-between md:order-2"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <h3 className="text-center text-xl text-blue-800 relative">
-                "ONE PICTURE A MILLION MEMORIES"
-              </h3>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                <Lottie
-                  animationData={animation}
-                  className="h-72 w-auto object-cover transition-opacity duration-500 ease-in-out"
-                />
-              </motion.div>
-            </motion.div>
-            <motion.div
-              className="w-full md:w-1/2 relative overflow-hidden h-80 md:order-1"
+              className="w-full relative overflow-hidden h-80 md:order-1"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
