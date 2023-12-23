@@ -1,0 +1,16 @@
+.card-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    border: 1px solid #EAEAEA;
+    height: 250px; 
+    text-align: center;
+    padding: 1rem;
+    background-color: white; 
+}
+  .card-content {
+    background: rgba(13, 52, 89, 0.7); 
+    color: white; 
+    padding: .5rem;
+  }
+  

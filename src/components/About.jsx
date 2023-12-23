@@ -1,15 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import logocusat2 from '../assets/logocusat2.png';
-import adm from '../assets/adm.png';
-import Navbar from './Navbar';
+import logo from '../assets/logo/logocusat2.png';
 
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-8">
       <div className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-5/6">
         <motion.h1
-          className="text-3xl text-center text-orange-400"
+          className="text-4xl text-center text-[#01484C]"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -17,7 +15,7 @@ const About = () => {
           About Us
         </motion.h1>
         <motion.p
-          className="text-lg text-center mt-2 text-[#49A79D]"
+          className="text-lg text-center mt-2 text-[#01484C]"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -33,7 +31,7 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <img
-                src={adm}
+                src={logo}
                 alt="IEEE Logo"
                 className="h-64 w-fill object-contain px-8"
               />

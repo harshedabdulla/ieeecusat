@@ -1,17 +1,17 @@
 import React from 'react'
 import {Routes, Route, BrowserRouter} from 'react-router-dom'
 import Footer from "./components/Footer"
-import Home from './components/Home'
-import Execom from './components/Execom'
-import Events from './components/Events'
+import Home from './pages/Home'
+import Execom from './pages/Execom'
+import Events from './pages/Events'
 import Highlights from './components/Highlights'
-import Contacts from './components/Contacts'
+import Contacts from './pages/Contacts'
 import About from './components/About'
 import Gallery from './components/Gallery'
 import Newsletters from './components/Newsletters'
 import Credits from './components/Credits'
-import Gallery2 from './components/Gallery2'
-import Execom2 from './components/Execom2'
+import Gallery2 from './pages/Gallery2'
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,7 +26,6 @@ function App() {
         <Route path='/newsletters' element={<Newsletters/>} />
         <Route path='/credits' element={<Credits/>} />
         <Route path='/gallery2' element={<Gallery2/>} />
-        <Route path='/execom2' element={<Execom2/>} />
 
       </Routes>
       <Footer/>

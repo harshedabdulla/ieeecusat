@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Lottie from 'lottie-react';
-import animation from '../assets/86897-gallery-icon-animation.json';
 import img1 from '../assets/gallery/evehack01.jpeg';
 import img2 from '../assets/gallery/evehack02.jpeg';
 import img3 from '../assets/gallery/evehack03.jpeg';
@@ -34,9 +32,9 @@ const Gallery = () => {
   return (
     <div className="flex justify-center items-center mt-12 mx-4">
       <div className="w-4/5">
-        <div className="relative bg-white rounded-lg overflow-hidden border-2 border-[#49A79D] px-8 mt-4 pb-8 mb-8">
+        <div className="relative bg-white rounded-lg overflow-hidden border border-[#01484C] px-8 mt-4 pb-8 mb-8">
           <motion.h1
-            className="text-center text-3xl py-8 text-orange-400"
+            className="text-center text-4xl py-8 text-[#01484C]"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}

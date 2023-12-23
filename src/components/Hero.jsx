@@ -1,10 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
-import animation from '../assets/84855-engineering-infrastructure.json';
+// import animation from '../assets/84855-engineering-infrastructure.json';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-
 
 function Hero() {
   
@@ -32,7 +31,7 @@ function Hero() {
   return (
     <div className="hero-section relative">
       
-      <section className="bg-black w-screen relative">
+      <section className="bg-[url('./assets/backkground.png')] w-screen relative">
       
         <motion.div
           className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 sm:py-24"
@@ -73,26 +72,17 @@ function Hero() {
                 EVENTS
               </motion.a>
             </Link>
-            <HashLink
-                smooth
-                to="/#about"
-                className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
-              >
+          
             <motion.a
-              href="#"
+              href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join"
+              target='_blank'
               className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-[#49A79D] border border-[#49A79D] rounded-lg focus:ring-4 focus:ring-gray-100"
               variants={buttonVariants}
             >
-              Learn more
+              Join IEEE
             </motion.a>
-            </HashLink>
+           
           </div>
-          <motion.div
-            className="lg:mt-0 lg:col-span-5 lg:flex hidden md:block"
-            variants={animationVariants}
-          >
-            <Lottie animationData={animation} height={400} width={300} />
-          </motion.div>
         </motion.div>
        
       </section>

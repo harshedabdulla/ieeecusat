@@ -1,25 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import '../styles/Card.css'
 
 const Card = ({ imgSrc, name, position, ieeeno }) => {
   return (
     <motion.div
-      className="bg-white border-2 border-blue-900 py-3 h-full text-center"
+      className="card-containers"
       whileHover={{ scale: 1.05, cursor: 'pointer', color: '#01284C', borderColor: '#01284C'}}
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.3 }}
+      style={{
+        backgroundImage: `url(${imgSrc})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
-      <div className="flex items-center justify-center mb-2">
-        <img
-          src={imgSrc}
-          alt={name}
-          className="object-contain mt-3"
-          style={{ maxHeight: '150px', maxWidth: '300px' }}
-        />
+      <div className="card-content">
+        <div className="text-lg font-medium">{name}</div>
+        <div className="text-sm">{position}</div>
       </div>
-      <div className="text-lg font-medium">{name}</div>
-      <div className="text-sm">{position}</div>
-      
     </motion.div>
   );
 };

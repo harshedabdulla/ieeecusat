@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo4 from '../assets/logocusat2.png';
+import logo4 from '../assets/logo/logocusat2.png';
 import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {

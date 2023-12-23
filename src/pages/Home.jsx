@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Hero from './Hero'
-import About from './About'
-import Highlights from './Highlights'
-import Gallery from './Gallery'
-import Societies from './Societies'
-import Newsletters from './Newsletters'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import About from '../components/About'
+import Highlights from '../components/Highlights'
+import Gallery from '../components/Gallery'
+import Societies from '../components/Societies'
+import Newsletters from '../components/Newsletters'
 
 
 

@@ -11,9 +11,9 @@ function Newsletters() {
 
   return (
     <div>
-        <h1 className="text-3xl text-orange-400 text-center mb-4">Newsletters</h1>
+        <h1 className="text-3xl text-[#01484C] text-center mb-4">Newsletters</h1>
        
-        <p className="text-xl text-[#49A79D] text-center">IEEE SB CUSAT's annual newsletter</p>
+        <p className="text-xl text-[#01484C] text-center">IEEE SB CUSAT's annual newsletter</p>
         <br/>
     <div className="flex justify-center">
        

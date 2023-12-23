@@ -1,5 +1,4 @@
-import logo from '../assets/logod.png';
-import logo2 from '../assets/logo2d.png';
+import logo from '../assets/logo/logod.png';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { HiMail } from 'react-icons/hi';
 import { ImLocation } from 'react-icons/im'
