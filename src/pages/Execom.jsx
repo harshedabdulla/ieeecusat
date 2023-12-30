@@ -26,7 +26,6 @@ import Harshed from '../assets/execom/Harshed.jpg'
 import John from '../assets/execom/John.jpg'
 import Kevin from '../assets/execom/Kevin.jpg'
 import Lakshmi from '../assets/execom/Lakshmim.jpeg'
-import Malavika from '../assets/execom/malavikab.jpeg'
 import Manasi from '../assets/execom/Manasi.jpg'
 import Nayana from '../assets/execom/Nayana.jpeg'
 import Pavithra from '../assets/execom/Pavithra.jpg'
@@ -43,7 +42,7 @@ import vignesh from '../assets/execom/vignesh.jpeg'
 import linsa from '../assets/execom/linsa.jpg'
 import malavikab from '../assets/execom/malavikab.jpeg'
 import lakshmi from '../assets/execom/lakshmi.jpeg'
-
+import Malavika from '../assets/execom/Malavikaec.png'
 function Execom() {
   return (
     <div>
