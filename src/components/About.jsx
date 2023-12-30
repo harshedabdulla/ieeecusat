@@ -14,14 +14,7 @@ const About = () => {
         >
           About Us
         </motion.h1>
-        <motion.p
-          className="text-lg text-center mt-2 text-[#01484C]"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          IEEE CUSAT STUDENT BRANCH
-        </motion.p>
+       
         <div className="flex flex-col sm:flex-row mt-4">
           <div className="w-full sm:w-2/5">
             <motion.div

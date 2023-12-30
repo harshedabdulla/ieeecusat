@@ -11,7 +11,7 @@ function Newsletters() {
 
   return (
     <div>
-        <h1 className="text-3xl text-[#01484C] text-center mb-4">Newsletters</h1>
+        <h1 className="text-3xl text-[#01484C] text-center mb-4 mt-4">Newsletters</h1>
        
         <p className="text-xl text-[#01484C] text-center">IEEE SB CUSAT's annual newsletter</p>
         <br/>

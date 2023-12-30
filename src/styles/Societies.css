@@ -45,12 +45,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
  
   @media (max-width: 768px) {
     .society-card-container {
-      width: calc(50% - 1rem);
+      width: calc(100% - 1rem);
+      
     }
   }
   

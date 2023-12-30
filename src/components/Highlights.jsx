@@ -8,10 +8,10 @@ import '../styles/Highlights.css'; // Make sure to create this CSS file
 
 function Highlights() {
   const data = [
-    { number: 173, title: "Member Count", Icon: HiUserGroup },
-    { number: 304, title: "Completed Events", Icon: BsFillBookmarkCheckFill },
-    { number: 7, title: "Societies", Icon: SlBadge },
-    { number: 102, title: "Achievements", Icon: FaTrophy }
+    { number: 201, title: "Member Count",desc:"A thriving community of 201 innovative minds, our member count is a testament to the vibrant and collaborative spirit at IEEE CUSAT SB. Each member brings unique ideas and skills, fueling our journey towards technological excellence and professional growth.", Icon: HiUserGroup },
+    { number: 304, title: "Completed Events",desc:"With a grand tally of 304 events, our journey has been marked by diverse workshops, seminars, and conferences. These events have been the cornerstone of learning and interaction, bringing the latest in technology and research right to our doorstep.", Icon: BsFillBookmarkCheckFill },
+    { number: 7, title: "Societies",desc:"Our branch is home to 7 dynamic societies, each a hub of specialized knowledge and activity. From robotics to power systems, these societies are the beating heart of our branch, driving forward innovation and creating a rich tapestry of technical expertise.", Icon: SlBadge },
+    { number: 102, title: "Achievements",desc:"Pride of IEEE CUSAT SB, our 102 achievements are a showcase of our commitment to excellence. Spanning academic, technical, and community-oriented successes, these milestones reflect our relentless pursuit of knowledge.", Icon: FaTrophy }
   ];
 
   return (
@@ -36,7 +36,8 @@ function HighlightCard({ data }) {
         <h2 className="card-title">{data.title}</h2>
       </div>
       <div className="cards-back">
-        <p>More about {data.title}</p>
+        <p className="px-2 py-2">{data.desc}</p>
+        
       </div>
     </div>
   );

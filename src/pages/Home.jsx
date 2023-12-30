@@ -23,7 +23,7 @@ function Home() {
       <section id="highlights">
         <Highlights />
       </section>
-      <Gallery />
+
       <Newsletters />
       <Societies />
     </div>
