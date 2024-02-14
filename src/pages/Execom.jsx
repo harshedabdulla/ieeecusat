@@ -43,6 +43,8 @@ import linsa from '../assets/execom/linsa.jpg'
 import malavikab from '../assets/execom/malavikab.jpeg'
 import lakshmi from '../assets/execom/lakshmi.jpeg'
 import Malavika from '../assets/execom/Malavikaec.png'
+import Vishaka from '../assets/execom/Vishaka.jpeg'
+
 function Execom() {
   return (
     <div>
@@ -284,7 +286,7 @@ function Execom() {
           </div>
           <div className="w-full lg:w-1/3 lg:px-4 md:w-1/2 md:px-2 mb-8">
             <Card
-              imgSrc="https://via.placeholder.com/150"
+              imgSrc={Vishaka}
               name="Vishaka"
               position="PES Secretory"
               ieeeno="20BCE10001"
