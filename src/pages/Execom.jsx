@@ -43,7 +43,7 @@ import linsa from '../assets/execom/linsa.jpg'
 import malavikab from '../assets/execom/malavikab.jpeg'
 import lakshmi from '../assets/execom/lakshmi.jpeg'
 import Malavika from '../assets/execom/malavikaec.png'
-import Vishaka from '../assets/execom/Vishaka.jpeg'
+import Vishaka from '../assets/execom/vishaka.jpeg'
 
 function Execom() {
   return (
